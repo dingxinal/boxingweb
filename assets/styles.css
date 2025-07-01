@@ -489,8 +489,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .trainers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    justify-content: center;
 }
 
 .trainer-card {
@@ -521,6 +522,55 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     color: #fff;
     font-size: 4rem;
+}
+
+.trainer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid #e74c3c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.trainer-new {
+    background: linear-gradient(135deg, #2ecc71, #27ae60) !important;
+    position: relative;
+}
+
+.trainer-new::after {
+    content: 'NEW';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f39c12;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.trainer-new-photo {
+    position: relative;
+}
+
+.trainer-new-photo::after {
+    content: 'NEW';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f39c12;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 2;
 }
 
 .trainer-card h3 {
