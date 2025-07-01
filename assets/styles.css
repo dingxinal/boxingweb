@@ -353,11 +353,27 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     position: relative;
     border: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .class-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+.class-link:hover .class-cta {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.class-link:hover .class-cta i {
+    transform: translateX(5px);
 }
 
 .class-card.featured {
@@ -440,6 +456,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: #e74c3c;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.class-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 12px 20px;
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.class-cta i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
 }
 
 /* Trainers Section */
