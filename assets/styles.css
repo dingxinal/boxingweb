@@ -115,8 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(231, 76, 60, 0.8), rgba(17, 17, 17, 0.8)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23111" width="1200" height="800"/><g fill="%23e74c3c" opacity="0.1"><circle cx="200" cy="200" r="100"/><circle cx="800" cy="300" r="80"/><circle cx="400" cy="600" r="120"/><circle cx="1000" cy="500" r="90"/></g></svg>');
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.7), rgba(17, 17, 17, 0.8)), 
+                url('boxing-gym-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
