@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -809,7 +810,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive Design */
+/* Mobile and touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .hero {
+        background-attachment: scroll !important;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -896,6 +909,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
